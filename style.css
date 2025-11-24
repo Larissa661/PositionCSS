@@ -74,6 +74,22 @@ p {
 
 section {
     margin-bottom: 4rem;
-    
+
+
+
+div {
+ width: 6rem;
+ height: 6rem;
+ background-color: rgb(255, 143, 189);
+ margin-inline: auto;
+ margin-bottom: 1.5rem;
+}
+.pínk {
+    background: rgb(255, 55, 165);
+}
+}
+
+mark {
+    background-color: rgb(255, 55, 165);
 }
 }
