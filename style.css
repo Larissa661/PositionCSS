@@ -71,4 +71,9 @@ p {
     margin-inline: auto;
     line-height: 2.5rem;
 }
+
+section {
+    margin-bottom: 4rem;
+    
+}
 }
