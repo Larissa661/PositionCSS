@@ -1,18 +1,37 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    box-sizing: border-bosx;
 }
 
 :root {
-    font-size: 62.5;
+    font-size: 62.5%;
 
 }
 
 body {
-    font-size:1.6rem;
+    font-size: 1.6rem;
 }
 
 header {
-    
+    background: rgb(255, 195, 213);
+}
+
+.header-container {
+   
+    max-width: 120rem;
+    margin-inline: auto;
+    text-align: center;
+    padding-block: 2rem;
+    color: rgb(211, 25, 118);
+}
+
+ul {
+    list-style: none;
+
+}
+
+a {
+    color: rgb(255, 107, 188);
+    text-decoration: none;
 }
