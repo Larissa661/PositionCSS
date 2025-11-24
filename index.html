@@ -16,8 +16,17 @@
     <nav>
      <ul>
        <li>
-         <a href="">Static</a>
+         <a href="#static">Static</a>
        </li>
+       <li>
+        <a href="#relative">Relative</a>
+      </li>
+      <li>
+        <a href="#absolute">Absolute</a>
+      </li>
+      <li>
+        <a href="#fixed">Fixed</a>
+      </li>
      </ul>
     </nav>
   </div>
@@ -28,7 +37,7 @@
     <section id="static">
     <h2>Position static</h2>
 
-    <p>No CSS, position: static é o valor padrão aplicado a todos os elementos, significando que eles são posicionados conforme o fluxo normal da página, sem deslocamentos manuais. Quando um elemento está com posição estática, propriedades como top, right, bottom e left não têm efeito, pois ele não é removido do fluxo comum. Isso garante que o layout siga a ordem natural do HTML, sem sobreposição ou movimentação especial, sendo ideal para a maioria dos elementos que não precisam de posicionamento específico.</p>
+    <p>No CSS, <strong>position: static</strong> é o valor padrão aplicado a todos os elementos, significando que eles são posicionados conforme o fluxo normal da página, sem deslocamentos manuais. Quando um elemento está com posição estática, propriedades como top, right, bottom e left não têm efeito, pois ele não é removido do fluxo comum. Isso garante que o layout siga a ordem natural do HTML, sem sobreposição ou movimentação especial, sendo ideal para a maioria dos elementos que não precisam de posicionamento específico.</p>
   </section>
 
   <section id="relative">
@@ -38,11 +47,29 @@
     <div class="pink"></div>
     <div></div>
 
-    <p>No CSS, <strong>position: relative</strong> permite que um elemento seja posicionado em relação à sua posição original no fluxo da página. Quando aplicado, o elemento permanece ocupando o mesmo espaço no layout, mas pode ser deslocado usando as propriedades <mark>, right, bottom e left,</mark> movendo-se visualmente sem afetar a posição dos outros elementos. Isso torna o relative útil para ajustes finos ou como referência para elementos posicionados de forma absoluta dentro dele, já que um elemento com position: absolute pode usar o elemento relativo como ponto de referência para seu próprio posicionamento.</p>
+    <p>No CSS, <strong>position: relative</strong> permite que um elemento <mark> </mark>seja posicionado em relação à sua posição original</mark> no fluxo da página. Quando aplicado, o elemento permanece ocupando o mesmo espaço no layout, mas pode ser deslocado usando as propriedades <mark>, right, bottom e left,</mark> movendo-se visualmente sem afetar a posição dos outros elementos. Isso torna o relative útil para ajustes finos ou como referência para elementos posicionados de forma absoluta dentro dele, já que um elemento com position: absolute pode usar o elemento relativo como ponto de referência para seu próprio posicionamento.</p>
   </section>
-</div>
 
+  <section id="absolute">
+    <h2>Position: absolute</h2>
+
+
+    <div></div>
+    <div class="pink"></div>
+    <div></div>
+
+    <p> No CSS, <strong>position: absolute</strong> remove o elemento do fluxo normal da página e o posiciona em relação ao seu ancestral mais próximo que tenha um posicionamento diferente de static (como relative, absolute, fixed ou sticky). Isso permite colocar o elemento exatamente onde se deseja usando top, right, bottom e left, sem afetar o layout dos demais elementos ao redor. Por estar fora do fluxo, outros elementos se comportam como se ele não existisse, tornando o absolute ideal para criar sobreposições, pop-ups, ícones posicionados sobre imagens e componentes que exigem um controle mais preciso da posição.</p>
+   </section>
+</div>
+<section id="fixed">
+  <h2>Position: fixed</h2>
+  <p>No CSS, <strong>position: fixed </strong>fixa o elemento em relação à janela de visualização (viewport), mantendo-o sempre no mesmo lugar, mesmo quando o usuário rola a página. Elementos com fixed são removidos do fluxo normal do documento e podem ser posicionados com top, right, bottom e left, permitindo criar cabeçalhos fixos, botões flutuantes, barras laterais e outros componentes que devem permanecer visíveis o tempo todo. Como o posicionamento é relativo ao viewport, o elemento não se move junto com o conteúdo, garantindo sua permanência na tela independentemente da rolagem.</p>
+
+</section>
 </main>
+<div class="arrow">
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#FFF"><path d="M440-80v-647L256-544l-56-56 280-280 280 280-56 57-184-184v647h-80Z"/></svg>
+</div>
 </body>
 </html>
 

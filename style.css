@@ -3,19 +3,24 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Outfit", sans-serif;
-
+scroll-padding-top: 10.8rem;
+scroll-behavior: smooth;
+}
 
 :root {
     font-size: 62.5%;
-
 }
 
 body {
     font-size: 1.6rem;
+    position: relative;
 }
 
 header {
     background: rgb(255, 195, 213);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
 }
 
 .header-container {
@@ -33,11 +38,14 @@ h1 {
 
 ul {
     list-style: none;
+    display:flex;
+    gap:6rem;
+    justify-content: center;
 
 }
 
 a {
-    color: #f7e7ef;
+    color: #fde2f0;
     text-decoration: none;
 }
 
@@ -51,12 +59,12 @@ li:hover {
 
 
 main {
-    background: #ffeff5;
+    background: #ffffff;
     min-height: calc(100svh - 10.8rem);
 }
 
 .main-container {
-    padding-block: 5rem;
+    padding-block: 14.8rem 4rem;
     max-width: 120rem;
     margin: 0 auto;
     text-align: center;
@@ -92,4 +100,33 @@ div {
 mark {
     background-color: rgb(255, 55, 165);
 }
+}
+
+#relative {
+    .pink {
+        position: relative;
+       bottom: 3rem;
+       background: rgb(255, 55, 165);
+       left: 3rem;
+    }
+}
+
+#absolute {
+    .pink {
+        
+        position: absolute;
+        background: rgb(255, 55, 165);
+bottom: 2rem;
+left: 2rem;
+    }
+}
+
+.arrow {
+    background: #ff7bbf;
+    width: fit-content;
+    padding: 1rem;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 5rem;
+    right: 5rem;
 }
