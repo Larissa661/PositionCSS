@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Position no CSS</title>
   <link href='/style.css' rel='stylesheet'>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -21,10 +24,18 @@
 </header>
 
 <main>
-  <section>
+  <div class="main-container">
+    <section>
     <h2>Position static</h2>
+
     <p>No CSS, position: static é o valor padrão aplicado a todos os elementos, significando que eles são posicionados conforme o fluxo normal da página, sem deslocamentos manuais. Quando um elemento está com posição estática, propriedades como top, right, bottom e left não têm efeito, pois ele não é removido do fluxo comum. Isso garante que o layout siga a ordem natural do HTML, sem sobreposição ou movimentação especial, sendo ideal para a maioria dos elementos que não precisam de posicionamento específico.</p>
   </section>
+
+  <section>
+    <h2>Position: relative</h2>
+  </section>
+</div>
+
 </main>
 </body>
 </html>

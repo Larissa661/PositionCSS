@@ -1,8 +1,9 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-bosx;
-}
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+
 
 :root {
     font-size: 62.5%;
@@ -23,7 +24,11 @@ header {
     margin-inline: auto;
     text-align: center;
     padding-block: 2rem;
-    color: rgb(211, 25, 118);
+    color: rgb(255, 128, 176);
+}
+
+h1 {
+    margin-bottom: 1rem;
 }
 
 ul {
@@ -32,6 +37,38 @@ ul {
 }
 
 a {
-    color: rgb(255, 107, 188);
+    color: #f7e7ef;
     text-decoration: none;
+}
+
+
+li:hover {
+    transform: scale(1.1);
+    font-weight: 700;
+    transition: .4s;
+}
+
+
+
+main {
+    background: #ffeff5;
+    min-height: calc(100svh - 10.8rem);
+}
+
+.main-container {
+    padding-block: 5rem;
+    max-width: 120rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 2rem;
+}
+
+p {
+    max-width: 60rem;
+    margin-inline: auto;
+    line-height: 2.5rem;
+}
 }
